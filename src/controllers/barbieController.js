@@ -53,11 +53,11 @@ const getBarbieById = (req, res) => {
 const createBarbie = (req, res) => {
   // Acessando dados do body
   //mudar o nodemon para node no package
-  const { nome, profissão, anoLancamento } = req.body;
+  const { nome, profissao, anoLancamento } = req.body;
   console.log("Dados recebidos:", req.body);
 
   // Validação básica
-  if (!nome || !profissão) {
+  if (!nome || !profissao) {
     return res.status(400).json({
       success: false,
       message: "Nome e Profissão são obrigatórios para uma barbie!",
@@ -68,7 +68,7 @@ const createBarbie = (req, res) => {
   const novaBarbie = {
     id: barbies.length + 1,
     nome,
-    profissão: profissão,
+    profissao: profissao,
     anoLancamento: anoLancamento,
   };
 
