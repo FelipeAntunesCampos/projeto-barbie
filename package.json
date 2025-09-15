@@ -8,10 +8,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cls && nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GustavoAlvess/Padrao-MVC.git"
-  },
   "keywords": [
     "MVC",
     "Back-end"
